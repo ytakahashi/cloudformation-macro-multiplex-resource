@@ -1,0 +1,16 @@
+{
+  "name": "cfn-tmpl",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "lint": "standard",
+    "lambda-local": "lambda-local -l index.js -h handler",
+    "package": "aws cloudformation package --template-file macro.yaml --output-template-file cfn-transformed-template.yaml",
+    "deploy": "aws cloudformation deploy --template-file ./cfn-transformed-template.yaml --capabilities CAPABILITY_IAM"
+  },
+  "devDependencies": {
+    "lambda-local": "^1.5.1",
+    "standard": "^12.0.1"
+  }
+}

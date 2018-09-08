@@ -1,0 +1,25 @@
+{ 
+  "region": "ap-northeast-1",
+  "accountId": 558075295581,
+  "fragment": { 
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Parameters": { 
+      "NumberOfRepeats": 1
+    },
+    "Resources": { 
+      "resource": {
+        "Type": "AWS::SNS::Topic",
+        "Properties": {
+          "DisplayName": "test topic",
+          "TopicName": "TestTopic"
+        }
+      }
+    } 
+  },
+  "transformId": "558075295581::TestMacro",
+  "params": {},
+  "requestId": "506ce88c-b86e-4422-af4c-0df293618bff",
+  "templateParameterValues": {
+    "NumberOfRepeats": "3"
+  } 
+}

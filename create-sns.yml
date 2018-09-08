@@ -1,0 +1,14 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: [MultiplexResourceMacro]
+
+Parameters:
+  NumberOfRepeats:
+    Type: Number
+    Default: 1
+
+Resources:
+  Resource:
+    Type: AWS::SNS::Topic
+    Properties:
+      DisplayName: test topic
+      TopicName: TestTopic
