@@ -1,0 +1,1 @@
+# cloudformation-macro-multiplex-resource
